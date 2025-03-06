@@ -5,32 +5,60 @@ Ce projet est une participation à la compétition Kaggle "Titanic: Machine Lear
 
 ## 📂 Structure du projet
 ```
-📦 Titanic-Kaggle-Competition
- ┣ 📂 data
- ┃ ┣ 📜 train.csv
- ┃ ┣ 📜 test.csv
- ┃ ┣ 📜 sample_submission.csv
- ┃ ┗ 📜 README.md
- ┣ 📂 notebooks
- ┃ ┣ 📜 01_Exploration.ipynb
- ┃ ┣ 📜 02_Feature_Engineering.ipynb
- ┃ ┣ 📜 03_Model_Training.ipynb
- ┃ ┗ 📜 04_Evaluation_Submission.ipynb
- ┣ 📂 scripts
- ┃ ┣ 📜 preprocess.py
- ┃ ┣ 📜 train_model.py
- ┃ ┗ 📜 predict.py
- ┣ 📂 reports
- ┃ ┣ 📜 eda_report.html
- ┃ ┗ 📜 model_performance.md
- ┣ 📂 models
- ┃ ┗ 📜 best_model.pkl
- ┣ 📜 .gitignore
- ┣ 📜 requirements.txt
- ┣ 📜 README.md
- ┣ 📜 LICENSE
- ┗ 📜 config.yaml
-```
+📂 **Titanic-Kaggle-Competition**
+├── 📂 **models/**
+│   ├── 📂 **v1/**
+│   │   ├── 📄 model.pkl
+│   │   ├── 📄 train.py
+│   │   ├── 📄 predict.py
+│   │   ├── 📄 evaluate.py
+│   │   ├── 📄 config.yaml
+│   ├── 📂 **v2/**
+│   │   ├── 📄 model.pkl
+│   │   ├── 📄 train.py
+│   │   ├── 📄 predict.py
+│   │   ├── 📄 evaluate.py
+│   │   ├── 📄 config.yaml
+│   ├── 📄 __init__.py
+├── 📂 **data/**
+│   ├── 📂 **raw/**
+│   ├── 📂 **processed/**
+│   ├── 📄 train.csv
+│   ├── 📄 test.csv
+│   ├── 📄 __init__.py
+├── 📂 **utils/**
+│   ├── 📄 preprocessing.py
+│   ├── 📄 feature_engineering.py
+│   ├── 📄 metrics.py
+│   ├── 📄 logger.py
+│   ├── 📄 __init__.py
+├── 📂 **tests/**
+│   ├── 📄 test_predict.py
+│   ├── 📄 test_evaluate.py
+│   ├── 📄 test_preprocessing.py
+│   ├── 📄 __init__.py
+├── 📂 **notebooks/**
+│   ├── 📄 eda.ipynb
+│   ├── 📄 model_training.ipynb
+│   ├── 📄 evaluation.ipynb
+├── 📂 **scripts/**
+│   ├── 📄 train.sh
+│   ├── 📄 evaluate.sh
+│   ├── 📄 preprocess.sh
+├── 📂 **logs/**
+│   ├── 📄 training.log
+│   ├── 📄 predictions.log
+├── 📄 main.py
+├── 📄 config.yaml
+├── 📄 requirements.txt
+├── 📄 README.md
+├── 📄 Dockerfile
+├── 📄 Makefile
+├── 📄 .gitignore
+├── 📂 **.github/**
+│   ├── 📂 **workflows/**
+│   │   ├── 📄 ci.yml
+
 
 ## 📊 Données
 Les fichiers de données fournis par Kaggle sont stockés dans le répertoire `data/` :
